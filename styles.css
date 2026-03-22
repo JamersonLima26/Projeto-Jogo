@@ -1,0 +1,22 @@
+:root {
+      --black:    #0a0a0f;
+      --darkbg:   #12121c;
+      --panel:    #1a1a2e;
+      --border:   #2a2a4a;
+      --p1:       #e63946;
+      --p1light:  #ff6b7a;
+      --p2:       #457b9d;
+      --p2light:  #74b3ce;
+      --hp-bg:    #1d1d2e;
+      --hp-red:   #e63946;
+      --hp-yellow:#ffd166;
+      --hp-green: #06d6a0;
+      --gold:     #ffd166;
+      --white:    #edf2f4;
+      --dim:      #8d99ae;
+      --scanline: rgba(0,0,0,0.18);
+      --glow-p1:  0 0 18px #e6394688, 0 0 40px #e6394633;
+      --glow-p2:  0 0 18px #457b9d88, 0 0 40px #457b9d33;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

@@ -6,10 +6,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Projeto</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    
+<div class="cabinet">
+
+    <!--Titulo do jogo-->
+    <div>
+        <h1>Robot Combat</h1>
+        <span>Insira a moeda</span>
+    </div>
+
+    <!--HUD-->
+    <div>
+
+        <!-- Player 1-->
+        <div class="Info-p1">
+            <span class="Nome do player">Jamerson</span>
+            <div class="hp-track">
+                <div class="hp-bar" style="width:72%"></div>
+            </div>
+            <div class="gauge-row">
+                <div class="gauge-pip filled"></div>
+                <div class="gauge-pip filled"></div>
+                <div class="gauge-pip filled"></div>
+                <div class="gauge-pip"></div>
+                <div class="gauge-pip"></div>
+            </div>
+        </div>
+
+        <!--Tempo + rounds-->
+    <div class=center-hud>
+        <span class="numero do round">ROUND 2</span>
+        <div class="tempo">48</div>
+        <div class="numero de rounds">
+            <div class="round-pip won"></div>
+            <div class="round-pip"></div>
+        </div>
+    </div>
+
+        <!-- Player 2-->
+    <div class="Info-p2">
+            <span class="Nome do player">Camila</span>
+            <div class="hp-track">
+                <div class="hp-bar" style="width:42%"></div>
+            </div>
+            <div class="gauge-row" style="flex-direction:row-reverse;">
+                <div class="gauge-pip filled"></div>
+                <div class="gauge-pip filled"></div>
+                <div class="gauge-pip filled"></div>
+                <div class="gauge-pip"></div>
+                <div class="gauge-pip"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de fundo-->
+    <div class="viewport">
+        <div class="bg-sky"></div>
+        <div class="bg-moon"></div>
+        <div class="bg-city"></div>
+        <div class="bg-windows"></div>
+        <div class="bg-ground"></div>
+
+    <!-- FIGHTERS -->
+    <div class="lutadores">
+
+      <!-- P1 fighter -->
+        <div class="fighter p1">
+            <div class="cabelo"></div>
+            <div class="cabeca"><div class="eye"></div></div>
+            <div class="braco"></div>
+            <div class="mao"></div>
+            <div class="corpo"></div>
+            <div class="cinto"></div>
+            <div class="perna-l"></div>
+            <div class="perna-r"></div>
+            <div class="bota-l"></div>
+            <div class="bota-r"></div>
+        </div>
+
+      <!-- P2 fighter -->
+        <div class="fighter p2">
+            <div class="cabelo"></div>
+            <div class="cabeca"><div class="eye"></div></div>
+            <div class="braco"></div>
+            <div class="mao"></div>
+            <div class="corpo"></div>
+            <div class="cinto"></div>
+            <div class="perna-l"></div>
+            <div class="perna-r"></div>
+            <div class="bota-l"></div>
+            <div class="bota-r"></div>
+        </div>
+    </div>
+
+    <div class="sparks">
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+    </div>
+
+    <!-- Texto central -->
+    <div class="fight-text">FIGHT!</div>
+    </div>
+
+    <!-- Painel de controles-->
+
+    <div class="Painel de controles">
+        <!--Controles P1-->
+        <div class="crtl-layout">
+            <div class="ctrl-label">P1 Controles</div>
+        </div>
+
+        <!--- Hall de controles-->
+        <div class="ctrl-row">
+
+        <!-- D-pad -->
+        <div class="dpad">
+            <div class="dpad-btn"></div>
+            <div class="dpad-btn">▲</div>
+            <div class="dpad-btn"></div>
+            <div class="dpad-btn">◀</div>
+            <div class="dpad-btn dpad-center"></div>
+            <div class="dpad-btn">▶</div>
+            <div class="dpad-btn"></div>
+            <div class="dpad-btn">▼</div>
+            <div class="dpad-btn"></div>
+        </div>
+
+        <!-- Action buttons -->
+            <div class="action-btns">
+            <div class="btn-row">
+                <button class="act-btn btn-y">Y</button>
+                <button class="act-btn btn-x">X</button>
+            </div>
+            <div class="btn-row">
+                <button class="act-btn btn-b">B</button>
+                <button class="act-btn btn-a">A</button>
+            </div>
+            </div>
+        
+        
+        <!-- Action buttons -->
+            <div class="action-btns">
+            <div class="btn-row">
+                <button class="act-btn btn-y">Y</button>
+                <button class="act-btn btn-x">X</button>
+            </div>
+            <div class="btn-row">
+                <button class="act-btn btn-b">B</button>
+                <button class="act-btn btn-a">A</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="moves-list">
+            <div class="move-entry">
+            <span class="move-name">HADOKEN</span>
+            <div class="move-input">
+                <span class="move-key">↓</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">→</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">A</span>
+            </div>
+            </div>
+            <div class="move-entry">
+            <span class="move-name">UPPER</span>
+            <div class="move-input">
+                <span class="move-key">→</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">↓</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">B</span>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VS Center -->
+    <div class="vs-block">
+        <span class="vs-text">VS</span>
+        <span class="credits">CREDITS: 99</span>
+    </div>
+
+        <div class="ctrl-row" style="flex-direction:row-reverse;">
+            <div class="dpad">
+            <div class="dpad-btn"></div>
+            <div class="dpad-btn">▲</div>
+            <div class="dpad-btn"></div>
+            <div class="dpad-btn">◀</div>
+            <div class="dpad-btn dpad-center"></div>
+            <div class="dpad-btn">▶</div>
+            <div class="dpad-btn"></div>
+            <div class="dpad-btn">▼</div>
+            <div class="dpad-btn"></div>
+            </div>
+            <div class="action-btns">
+            <div class="btn-row">
+                <button class="act-btn btn-y">Y</button>
+                <button class="act-btn btn-x">X</button>
+            </div>
+            <div class="btn-row">
+                <button class="act-btn btn-b">B</button>
+                <button class="act-btn btn-a">A</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="moves-list" style="align-items:flex-end;">
+            <div class="move-entry" style="flex-direction:row-reverse;">
+            <span class="move-name" style="text-align:right;">HADOKEN</span>
+            <div class="move-input">
+                <span class="move-key">↓</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">←</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">A</span>
+            </div>
+            </div>
+            <div class="move-entry" style="flex-direction:row-reverse;">
+            <span class="move-name" style="text-align:right;">UPPER</span>
+            <div class="move-input">
+                <span class="move-key">←</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">↓</span>
+                <span class="move-separator">+</span>
+                <span class="move-key">B</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <span class="status-text">© 2024 PIXEL KOMBAT</span>
+        <span class="status-text status-blink">▶ SELECT CHARACTER</span>
+        <span class="status-text">VER 1.0</span>
+    </div>
+
+</div>
+
 </body>
 </html>
